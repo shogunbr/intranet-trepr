@@ -19,6 +19,9 @@ const EnderecoInfo = ({ content }) => {
       <Container className="estado">
         <span>Estado</span>: <span>{estado}</span>
       </Container>
+      <Container className="cep">
+        <span>CEP</span>: <span>{cep}</span>
+      </Container>
     </Container>
   );
 };
