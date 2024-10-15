@@ -16,6 +16,6 @@ def added(obj: Area, event: ObjectAddedEvent):
     _update_excluded_from_nav(obj)
 
 
-def modified(obj: Area, event: ObjectAddedEvent):
+def modified(obj: Area, event: ObjectModifiedEvent):
     """Post modification handler for Area."""
     _update_excluded_from_nav(obj)
