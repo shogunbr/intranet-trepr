@@ -1,5 +1,8 @@
 import { cloneDeep } from 'lodash';
 
+// reducers
+import { climaData } from './reducers/climaData';
+
 /// Clima
 import ClimaEdit from './components/Blocks/Clima/Edit';
 import ClimaView from './components/Blocks/Clima/View';
@@ -98,6 +101,11 @@ const applyConfig = (config) => {
       });
     }
   });
+
+  config.addonReducers = {
+    ...config.addonReducers,
+    climaData,
+  };
 
   return config;
 };
